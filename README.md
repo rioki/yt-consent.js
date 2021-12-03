@@ -33,13 +33,13 @@ consentText.
 
 At the bottom of you file you want to add the following code:
 
-  <script src="js/yt-consent.js"></script>
-  <script>
-    ytConsent({
-      imagePrefix: '/yt-cache',
-      consentText: 'By clicking the play button you consent to <a href="https://policies.google.com/privacy?hl=en">Gogle\'s Privacy Policy.</a>'
-    })
-  </script>
+    <script src="js/yt-consent.js"></script>
+    <script>
+      ytConsent({
+        imagePrefix: '/yt-cache',
+        consentText: 'By clicking the play button you consent to <a href="https://policies.google.com/privacy?hl=en">Gogle\'s Privacy Policy.</a>'
+      })
+    </script>
 
 ### Local Thumbnails or YouTube Thumbnails
 
