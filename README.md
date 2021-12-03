@@ -88,7 +88,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
 THE SOFTWARE.
 
-## This Party Software
+## Third Party Software
 
 The example contains nomalize.css by Nicolas Gallagher and skeleton.css 
 by Dave Gamache. They are only required for the example and not to run 
