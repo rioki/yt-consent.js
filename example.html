@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>YouTube GDPR Compliant Embed Code</title>
+    <meta name="description" content="YouTube GDPR Compliant Embed Code">
+    <meta name="author" content="Sean Farrell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/yt-consent.css"> 
+  </head>
+<body>
+  <div class="container">
+    <h1>YouTube GDPR Compliant Embed Code</h1>
+    <div class="row">
+      <div class="one-half column">
+        <h2>YouTube Link</h2>
+        <p>
+          The safest thing to do, regarding GDPR and friends, is to never 
+          embed anything ever. This gives your users the highest level of 
+          privacy as just talking to other servers can be used to track users.
+        </p>
+        <p>
+          The code to get the link with preview is the following:
+        </p>
+        <p>
+          <code>
+            &lt;div class="yt-link" data-video="dFCbJmgeHmA"&gt;&lt;/div&gt;
+          </code>
+        </p>
+        <p>
+          This widget makes it clear that you will be sent to YouTube and 
+          once they are there, it's YouTube's problem to comply with privacy 
+          standards.
+        </p>
+      </div>
+      <div class="one-half column">
+        <div class="yt-link" data-video="dFCbJmgeHmA"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="one-half column">
+        <h2>YouTube Embed</h2>
+        <p>
+          Embedding is generally not a problem, as long as you ensure that
+          informed and explicit consent can be given before any tracking data
+          is installed. 
+        </p>
+        <p>
+          The code to get the embed is the following:
+        </p>
+        <p>
+          <code>
+            &lt;div class="yt-embed" data-video="-O5kNPlUV7w"&gt;&lt;/div&gt;
+          </code>
+        </p>
+        <p>
+          You can set which consent text to show, by specifying the option 
+          consentText.
+        </p>
+      </div>
+      <div class="one-half column">
+        <div class="yt-embed" data-video="-O5kNPlUV7w"></div>
+      </div>
+    </div>
+  </div>
+  <script src="js/yt-consent.js"></script>
+  <script>
+    ytConsent({
+      // This is the link to the video thumbnails. It follows YouTube's 
+      // thumbnailer pattern: <videoid>/sddefault.webp
+      // There is some debate if you actually need this and you can leave the 
+      // value unset, then YouTube's service will be used.
+      imagePrefix: '/yt-cache',
+      // The consent text shown for the youtube embed.
+      consentText: 'By clicking the play button you consent to <a href="https://policies.google.com/privacy?hl=en">Gogle\'s Privacy Policy.</a>'
+    })
+  </script>
+</body>
+</html>
