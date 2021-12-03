@@ -56,6 +56,13 @@ argument to be had that this may already violate GDPR, but to get a definite
 answer ask your favorite lawyer or wait for a nicely worded cease and 
 desist letter.
 
+### Thumbnail Fallback
+
+Older videos may have different thumbnails, such as jpg. You can override
+the thumbnail with data-thumbnail argument, like so:
+
+    <div class="yt-embed" data-video="JrQ0qMRZ_1Q" data-thumbnail="https://i.ytimg.com/vi/JrQ0qMRZ_1Q/sddefault.jpg"></div>
+
 ### Consent Text
 
 You can change the consent text for embedded videos, by setting consentText 

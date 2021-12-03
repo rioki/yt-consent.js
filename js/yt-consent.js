@@ -34,11 +34,12 @@ function ytConsent(options) {
   function handleLinks() {
     const elems = document.getElementsByClassName('yt-link')
     for (let i = 0; i < elems.length; i++) {
-      const video = elems[i].getAttribute('data-video');
+      const video     = elems[i].getAttribute('data-video');
+      const thumbnail = elems[i].hasAttribute('data-thumbnail') ? elems[i].getAttribute('data-thumbnail') : `${imagePrefix}/${video}/sddefault.webp`;
       if (video) {
         elems[i].innerHTML =
           `<a href="https://www.youtube.com/watch?v=${video}" target="_blank">` +
-          `<img src="${imagePrefix}/${video}/sddefault.webp" />` + 
+          `<img src="${thumbnail}" />` + 
           '<button class="yt-play">▶</button>' +
           '<p class="yt-watch">Watch on <b>YouTube</b></p>' +
           '</a>'
@@ -49,12 +50,12 @@ function ytConsent(options) {
   function handleEmbed() {
     const elems = document.getElementsByClassName('yt-embed')
     for (let i = 0; i < elems.length; i++) {
-      const elem  = elems[i];
-      const video = elems[i].getAttribute('data-video');
-
+      const elem      = elems[i];
+      const video     = elems[i].getAttribute('data-video');
+      const thumbnail = elems[i].hasAttribute('data-thumbnail') ? elems[i].getAttribute('data-thumbnail') : `${imagePrefix}/${video}/sddefault.webp`;
       if (video) {
         elem.innerHTML =
-          `<img src="${imagePrefix}/${video}/sddefault.webp" />` + 
+          `<img src="${thumbnail}" />` + 
           `<p class="yt-legal">${consentText}</p>` +
           `<button class="yt-play" onclick="ytLoadEmbedCode(this, \'${video}\')">▶</button>` +
           `<a href="https://www.youtube.com/watch?v=${video}" target="_blank"><p class="yt-watch">Watch on <b>YouTube</b></p></a>`
