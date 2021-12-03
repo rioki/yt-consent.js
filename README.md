@@ -10,7 +10,7 @@ privacy as just talking to other servers can be used to track users.
 
 The code to get the link with preview is the following:
 
-  <div class="yt-link" data-video="dFCbJmgeHmA"></div>;
+    <div class="yt-link" data-video="dFCbJmgeHmA"></div>
 
 This widget makes it clear that you will be sent to YouTube and 
 once they are there, it's YouTube's problem to comply with privacy 
@@ -24,7 +24,7 @@ is installed.
 
 The code to get the embed is the following:
 
-  <div class="yt-embed" data-video="-O5kNPlUV7w"></div>
+    <div class="yt-embed" data-video="-O5kNPlUV7w"></div>
 
 You can set which consent text to show, by specifying the option 
 consentText.
